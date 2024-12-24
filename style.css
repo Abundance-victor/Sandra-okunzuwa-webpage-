@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Announcement Section */
+.announcement {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.announcement h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.announcement p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin: 20px 0;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+/* Recent Movies Section */
+.recent-movies {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.recent-movies h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.movies {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.movie {
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.movie p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Submission Form Section */
+.submission-form {
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.submission-form h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.submission-form p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+form input,
+form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input:hover {
+    border-color: #4CAF50;
+    transition: border-color 0.3s ease;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+form input[type="file"] {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .movies {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .banner h2 {
+        font-size: 2rem;
+    }
+
+    form {
+        width: 90%;
+    }
+}

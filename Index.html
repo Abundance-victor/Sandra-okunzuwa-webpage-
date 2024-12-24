@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandra Okunzuwa's Movie Audition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sandra Okunzuwa's Movie Audition</h1>
+        <p>
+            Sandra Okunzuwa, a renowned actress and producer, is calling all aspiring talents to join her next blockbuster project. 
+            This is your chance to showcase your acting skills and become part of a world-class movie production!
+        </p>
+    </header>
+
+    <section class="announcement">
+        <h2>Audition Announcement</h2>
+        <p>
+            Are you passionate about acting? Do you have what it takes to bring characters to life on the big screen? 
+            Sandra Okunzuwa is hosting auditions for her upcoming movie. Don’t miss this incredible opportunity to make your mark in the film industry.
+        </p>
+    </section>
+
+    <section class="banner">
+       <img src="file-E3SKat3hdxFDAv32ha71W1.webp" alt="file-E3SKat3hdxFDAv32ha71W1">
+        <h2>Your Journey Starts Here</h2>
+        <p>Submit your details and audition video below to get started!</p>
+    </section>
+
+    <section class="recent-movies">
+        <h2>Recent Movies by Sandra Okunzuwa</h2>
+        <div class="movies">
+            <div class="movie">
+                <img src="470942385_942309891155373_6434534217349812072_n.heic.jpg" alt="470942385_942309891155373_6434534217349812072_n">
+                <p>RUTHLESS - A groundbreaking story of resilience.</p>
+            </div>
+            <div class="movie">
+                <img src="469919362_1282605479408049_606979519540758783_n.heic.jpg" alt="469919362_1282605479408049_606979519540758783_n">
+                <p>LAGOS CHEMISTRY - A Electrifying movie!.</p>
+            </div>
+            <div class="movie">
+                <img src="Alright people we are live !!!!! BECOMING MRS JAXON is now showing on MAURICE SAM TV .Let’s feast you will love this one !!!! Let’s go!!!!.heic.jpg" alt="Alright people we are live !!!!! BECOMING MRS JAXON is now showing on MAURICE SAM TV ">
+                <p>BECOMING MRS JAXON - Another interesting movie that will Wow you!.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="submission-form">
+        <h2>Submit Your Audition</h2>
+        <p>Fill out the form below to submit your details and audition video. We can't wait to see what you’ve got!</p>
+        <form action="/submit" method="POST" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="video">Upload Audition Video (1 min max):</label>
+            <input type="file" id="video" name="video" accept="video/*" required>
+
+            <label>
+                <input type="checkbox" required> I agree to the terms and conditions
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
